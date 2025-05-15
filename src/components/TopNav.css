@@ -1,0 +1,42 @@
+.top-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff0f4;
+  border-bottom: 1px solid #fbdde2; 
+  z-index: 1000;
+  flex-wrap: wrap;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #aa5a70; 
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  transition: color 0.3s;
+}
+
+.top-nav a:hover {
+  color: #e97a90; 
+}
+
+.top-nav a.active {
+  color: #F7A8B8; 
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .top-nav {
+    gap: 1rem;
+    padding: 8px;
+  }
+
+  .top-nav a {
+    font-size: 0.95rem;
+  }
+}
